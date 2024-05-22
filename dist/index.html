@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasinão</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="flex items-center justify-center min-h-screen bg-gray-800 py-8 pt-12">
+        <div class="container mx-auto px-4">
+            <article class="grid grid-cols-2">
+
+                <section
+                    class="animate-in fade-in zoom-in duration-700 rounded-2xl nm-convex-gray-800-lg mx-2 mb-4 h-60 flex flex-col justify-center items-center relative">
+                    <input id="dupla1n1"
+                        class="text-white rounded-2xl h-8 w-8/12 pl-3 mb-4 font-krona text-xs nm-inset-gray-800-lg focus:outline-none  border-b-2 border-transparent focus:border-purple-500"
+                        type="text" placeholder="Nome 1">
+                    <input id="dupla1n2"
+                        class="text-white rounded-2xl h-8 w-8/12 pl-3 mb-4 font-krona text-xs nm-inset-gray-800-lg focus:outline-none  border-b-2 border-transparent focus:border-purple-500"
+                        type="text" placeholder="Nome 2">
+                    <button id="dropdownButton1"
+                        class="selectable rounded-2xl h-20 w-8/12 mb-4 font-krona text-white text-4xl text-center nm-inset-gray-800 flex items-center justify-center select-none focus:outline-none ">0</button>
+                    <div id="dropdown1"
+                        class="hidden absolute w-36 mt-2 nm-convex-gray-800-lg text-white rounded-xl shadow-md">
+                        <button
+                            class="block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-800-lg rounded-t-xl hover:text-white font-bold">+1</button>
+                        <button
+                            class="block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-800-lg hover:text-white font-bold">+3</button>
+                        <button
+                            class="block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-800-lg rounded-b-xl hover:text-white font-bold">-1</button>
+                    </div>
+                </section>
+
+                <section
+                    class="animate-in fade-in zoom-in duration-700 rounded-2xl nm-convex-gray-800-lg mx-2 mb-4 h-60 flex flex-col justify-center items-center relative">
+                    <input id="dupla2n1"
+                        class="text-white rounded-2xl h-8 w-8/12 pl-3 mb-4 font-krona text-xs nm-inset-gray-800-lg focus:outline-none  border-b-2 border-transparent focus:border-purple-500"
+                        type="text" placeholder="Nome 1">
+                    <input id="dupla2n2"
+                        class="text-white rounded-2xl h-8 w-8/12 pl-3 mb-4 font-krona text-xs nm-inset-gray-800-lg focus:outline-none  border-b-2 border-transparent focus:border-purple-500"
+                        type="text" placeholder="Nome 2">
+                    <button id="dropdownButton2"
+                        class="selectable rounded-2xl h-20 w-8/12 mb-4 font-krona text-white text-4xl text-center nm-inset-gray-800 flex items-center justify-center select-none focus:outline-none ">0</button>
+                    <div id="dropdown2"
+                        class="hidden absolute w-36 mt-2 nm-convex-gray-800-lg text-white rounded-xl shadow-md">
+                        <button
+                            class="block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-800-lg rounded-t-xl hover:text-white font-bold">+1</button>
+                        <button
+                            class="block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-800-lg hover:text-white font-bold">+3</button>
+                        <button
+                            class="block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-800-lg rounded-b-xl hover:text-white font-bold">-1</button>
+                    </div>
+                </section>
+
+
+            </article>
+
+            <article class="animate-in fade-in zoom-in duration-700 rounded-2xl nm-convex-gray-800-lg mx-2 mb-4 h-64">
+                <div class="flex flex-row py-4">
+                  <div class="flex flex-col w-full items-center">
+                    <h1 class="select-none mb-3 font-krona flex-grow text-md text-white">Anterior</h1>
+                    <button id="curingaAnterior" class="rounded-2xl h-44 w-8/12 font-krona text-white text-4xl text-center nm-inset-gray-800 flex items-center justify-center select-none focus:outline-none">J</button>
+                  </div>
+                  <div class="flex flex-col w-full items-center">
+                    <h1 class="select-none mb-3 font-krona flex-grow text-md text-white">Atual</h1>
+                    <button id="curingaAtual" class="selectable rounded-2xl h-44 w-8/12 font-krona text-white text-4xl text-center nm-inset-gray-800 flex items-center justify-center select-none focus:outline-none">J</button>
+                    <div id="curingaAtualDropdown" class="hidden absolute w-fit -mt-12 nm-convex-gray-800-lg text-white rounded-xl shadow-md">
+                      <div class="flex flex-row">
+                        <button class="block w-20 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg rounded-tl-xl hover:text-white font-bold">4</button>
+                        <button class="block w-20 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg rounded-tr-xl hover:text-white font-bold">11</button>
+                      </div>
+                      <div class="flex flex-row">
+                        <button class="block w-20 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg hover:text-white font-bold">5</button>
+                        <button class="block w-20 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg hover:text-white font-bold">12</button>
+                      </div>
+                      <div class="flex flex-row">
+                        <button class="block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg hover:text-white font-bold">6</button>
+                        <button class="block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg hover:text-white font-bold">1</button>
+                      </div>
+                      <div class="flex flex-row">
+                        <button class="block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg hover:text-white font-bold">7</button>
+                        <button class="block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg hover:text-white font-bold">2</button>
+                      </div>
+                      <div class="flex flex-row">
+                        <button class="block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg rounded-bl-xl hover:text-white font-bold">10</button>
+                        <button class="block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg rounded-br-xl hover:text-white font-bold">3</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              
+
+
+
+            <section
+                class="animate-in fade-in zoom-in duration-700 containerVez rounded-2xl nm-convex-gray-800-lg mx-2 mb-4 h-14 grid grid-cols-4">
+                <button id="vez1"
+                    class="focus:outline-none text-center text-2xl font-krona text-white rounded-l-2xl flex items-center justify-center">?</button>
+                <button id="vez2"
+                    class="focus:outline-none text-center text-2xl font-krona text-white flex items-center justify-center">?</button>
+                <button id="vez3"
+                    class="focus:outline-none text-center text-2xl font-krona text-white flex items-center justify-center">?</button>
+                <button id="vez4"
+                    class="focus:outline-none text-center text-2xl font-krona text-white rounded-r-2xl flex items-center justify-center">?</button>
+            </section>
+
+        </div>
+
+    </main>
+</body>
+
+<script src="./js/scripts.js"></script>
+
+</html>
