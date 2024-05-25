@@ -1,5 +1,5 @@
 
-  
+
 
 document.querySelectorAll('.selectable').forEach((section) => {
     section.addEventListener('click', (evento) => {
@@ -125,8 +125,8 @@ function showModal(winningTeam = null, title = "Vencedor!", message = null) {
         document.getElementById('modalVencedorTitle').textContent = title;
     }
 
-    const corDupla1 = 'text-red-500'; // Cor dupla 1
-    const corDupla2 = 'text-purple-500'; // Cor dupla 2
+    const corDupla1 = 'text-red-500';
+    const corDupla2 = 'text-purple-500';
 
     if (winningTeam) {
         let dupla1Nome1 = input1.value;
@@ -410,76 +410,76 @@ document.addEventListener('click', function (event) {
 });
 
 
-let currentPlayer = 0; // Represents the current player (1-based)
+let currentPlayer = 0;
 
-const trocaVezButtons = document.querySelectorAll('.trocaVez'); // Get all buttons with class "trocaVez"
+const trocaVezButtons = document.querySelectorAll('.trocaVez');
 
-if (trocaVezButtons && trocaVezButtons.length > 0) { // Check for existence and non-empty NodeList
-  trocaVezButtons.forEach(button => {
-    button.addEventListener('click', () => changeTurn('proximaVez')); // Add event listener to each button
-  });
+if (trocaVezButtons && trocaVezButtons.length > 0) {
+    trocaVezButtons.forEach(button => {
+        button.addEventListener('click', () => changeTurn('proximaVez'));
+    });
 } else {
-  console.warn("No buttons found with class 'trocaVez'."); // Handle case where no buttons exist
+    console.warn("No buttons found with class 'trocaVez'.");
 }
 
 function changeTurn(direction) {
-  console.log("Current player before change:", currentPlayer);
+    console.log("Current player before change:", currentPlayer);
 
-  // Handle direction based on button clicked (proximaVez or anteriorVez)
-  if (direction === 'proximaVez') {
-    currentPlayer = (currentPlayer + 1) % 4;
-  } else if (direction === 'anteriorVez') {
-    currentPlayer = (currentPlayer - 1 + 4) % 4; // Wrap around for negative values
-  } else {
-    console.warn("Invalid direction passed to changeTurn:", direction);
-    return; // Exit function if direction is invalid
-  }
 
-  console.log("Current player after change:", currentPlayer);
+    if (direction === 'proximaVez') {
+        currentPlayer = (currentPlayer + 1) % 4;
+    } else if (direction === 'anteriorVez') {
+        currentPlayer = (currentPlayer - 1 + 4) % 4;
+    } else {
+        console.warn("Invalid direction passed to changeTurn:", direction);
+        return;
+    }
 
-  // Update visual indicators based on currentPlayer
-  updateTurnDisplay();
+    console.log("Current player after change:", currentPlayer);
 
-  // Save the current player to localStorage
-  localStorage.setItem('currentPlayer', currentPlayer);
+
+    updateTurnDisplay();
+
+
+    localStorage.setItem('currentPlayer', currentPlayer);
 }
 
 function updateTurnDisplay() {
-  // Remove styles from all buttons
-  document.querySelectorAll('.containerVez > button').forEach((button) => {
-    button.classList.remove('nm-inset-gray-800-lg', 'border-b-4', 'border-purple-500');
-  });
 
-  // Add styles to the active player's button (based on currentPlayer)
-  const activeButton = document.getElementById(`vez${currentPlayer}`);
-  console.log("Trying to access button with ID:", `vez${currentPlayer}`); // Add console log for debugging
+    document.querySelectorAll('.containerVez > button').forEach((button) => {
+        button.classList.remove('nm-inset-gray-800-lg', 'border-b-4', 'border-purple-500');
+    });
 
-  if (activeButton) {
-    activeButton.classList.add('nm-inset-gray-800-lg', 'border-b-4', 'border-purple-500');
-  }
+
+    const activeButton = document.getElementById(`vez${currentPlayer}`);
+    console.log("Trying to access button with ID:", `vez${currentPlayer}`);
+
+    if (activeButton) {
+        activeButton.classList.add('nm-inset-gray-800-lg', 'border-b-4', 'border-purple-500');
+    }
 }
 
-// Add event listeners for proximaVez and anteriorVez buttons
+
 const proximaVezButton = document.getElementById('proximaVez');
 const anteriorVezButton = document.getElementById('anteriorVez');
 
 if (proximaVezButton) {
-  proximaVezButton.addEventListener('click', () => changeTurn('proximaVez'));
+    proximaVezButton.addEventListener('click', () => changeTurn('proximaVez'));
 } else {
-  console.warn("Button with ID 'proximaVez' not found.");
+    console.warn("Button with ID 'proximaVez' not found.");
 }
 
 if (anteriorVezButton) {
-  anteriorVezButton.addEventListener('click', () => changeTurn('anteriorVez'));
+    anteriorVezButton.addEventListener('click', () => changeTurn('anteriorVez'));
 } else {
-  console.warn("Button with ID 'anteriorVez' not found.");
+    console.warn("Button with ID 'anteriorVez' not found.");
 }
 
-// Load the previously saved current player from localStorage (if available)
+
 const savedCurrentPlayer = localStorage.getItem('currentPlayer');
 if (savedCurrentPlayer) {
-  currentPlayer = parseInt(savedCurrentPlayer);
+    currentPlayer = parseInt(savedCurrentPlayer);
 }
 
-// Call updateTurnDisplay on page load to set the initial turn indicator
+
 updateTurnDisplay();
