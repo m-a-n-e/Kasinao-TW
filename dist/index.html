@@ -60,26 +60,26 @@
 
                 <div id="modalFundo" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-40 blur"></div>
 
-                <div class="hidden fixed inset-x-0 mx-auto w-2/3 z-50" id="modalVencedor" tabindex="-1" aria-hidden="true"
-                    aria-labelledby="modalVencedorTitle" role="dialog">
+                <div class="hidden fixed inset-x-0 mx-auto w-2/3 z-50" id="modalVencedor" tabindex="-1"
+                    aria-hidden="true" aria-labelledby="modalVencedorTitle" role="dialog">
 
 
                     <div class="flex items-center justify-center min-height-screen pt-24 md:pt-32">
-                        <div class="relative nm-convex-gray-800-lg rounded-md" role="dialog"
-                            aria-modal="true">
-                            <div
-                                class="flex items-center justify-center p-5">
-                                <h3 class="text-center text-2xl font-krona tracking-tight text-gray-900 dark:text-gray-100"
+                        <div class="relative nm-convex-gray-800-lg rounded-md" role="dialog" aria-modal="true">
+                            <div class="flex items-center justify-center pt-5">
+                                <h3 class="text-center text-2xl font-krona tracking-tight text-white"
                                     id="modalVencedorTitle">Vencedores!</h3>
                             </div>
                             <div class="p-4">
                                 <div class="text-gray-500 text-center">
-                                    <p>Parabéns! <span id="vencedor1"></span> e <span id="vencedor2"></span> venceram!</p>
-                                    <p>Clique em "OK" para continuar jogando.</p>
-                                  </div>
+                                    <p>Parabéns! <span id="vencedor1"></span> e <span id="vencedor2"></span> venceram!
+                                    </p>
+                                    <p>Clique em "Recomeçar" para continuar jogando.</p>
+                                </div>
                             </div>
-                            <div class="flex items-center justify-center p-6">
-                                <button id="recomecarJogo" type="button" class="nm-inset-purple-500-sm text-white font-krona py-2 px-4 rounded-md"
+                            <div class="flex items-center justify-center pb-6 pt-4">
+                                <button id="recomecarJogo" type="button"
+                                    class="nm-inset-purple-500-sm text-white font-krona py-2 px-4 rounded-md"
                                     data-dismiss="modal">Recomeçar</button>
                             </div>
                         </div>
@@ -105,33 +105,33 @@
                             class="hidden absolute w-fit -mt-12 nm-convex-gray-800-lg text-white rounded-xl shadow-md">
                             <div class="flex flex-row">
                                 <button
-                                    class="block w-20 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg rounded-tl-xl hover:text-white font-bold">4</button>
+                                    class="trocaVez block w-20 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg rounded-tl-xl text-white font-bold">4</button>
                                 <button
-                                    class="block w-20 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg rounded-tr-xl hover:text-white font-bold">11</button>
+                                    class="trocaVez block w-20 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg rounded-tr-xl text-white font-bold">11</button>
                             </div>
                             <div class="flex flex-row">
                                 <button
-                                    class="block w-20 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg hover:text-white font-bold">5</button>
+                                    class="trocaVez block w-20 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg text-white font-bold">5</button>
                                 <button
-                                    class="block w-20 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg hover:text-white font-bold">12</button>
+                                    class="trocaVez block w-20 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg text-white font-bold">12</button>
                             </div>
                             <div class="flex flex-row">
                                 <button
-                                    class="block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg hover:text-white font-bold">6</button>
+                                    class="trocaVez block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg text-white font-bold">6</button>
                                 <button
-                                    class="block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg hover:text-white font-bold">1</button>
+                                    class="trocaVez block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg text-white font-bold">1</button>
                             </div>
                             <div class="flex flex-row">
                                 <button
-                                    class="block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg hover:text-white font-bold">7</button>
+                                    class="trocaVez block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg text-white font-bold">7</button>
                                 <button
-                                    class="block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg hover:text-white font-bold">2</button>
+                                    class="trocaVez block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg text-white font-bold">2</button>
                             </div>
                             <div class="flex flex-row">
                                 <button
-                                    class="block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg rounded-bl-xl hover:text-white font-bold">10</button>
+                                    class="trocaVez block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg rounded-bl-xl text-white font-bold">10</button>
                                 <button
-                                    class="block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg rounded-br-xl hover:text-white font-bold">3</button>
+                                    class="trocaVez block w-1/2 text-center px-4 py-3 text-md hover:nm-inset-gray-800-lg rounded-br-xl text-white font-bold">3</button>
                             </div>
                         </div>
                     </div>
@@ -143,14 +143,29 @@
 
             <section
                 class="animate-in fade-in zoom-in duration-700 containerVez rounded-2xl nm-convex-gray-800-lg mx-2 mb-4 h-14 grid grid-cols-4">
-                <button id="vez1"
+                <button id="vez0"
                     class="focus:outline-none text-center text-2xl font-krona text-white rounded-l-2xl flex items-center justify-center">?</button>
+                <button id="vez1"
+                    class="focus:outline-none text-center text-2xl font-krona text-white flex items-center justify-center">?</button>
                 <button id="vez2"
                     class="focus:outline-none text-center text-2xl font-krona text-white flex items-center justify-center">?</button>
                 <button id="vez3"
-                    class="focus:outline-none text-center text-2xl font-krona text-white flex items-center justify-center">?</button>
-                <button id="vez4"
                     class="focus:outline-none text-center text-2xl font-krona text-white rounded-r-2xl flex items-center justify-center">?</button>
+            </section>
+
+            <section class="animate-in fade-in zoom-in duration-700">
+                <button id="anteriorVez" class="float-left text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="size-14">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+                    </svg>
+                </button>
+                <button id="proximaVez" class="float-right text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="size-14">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
             </section>
 
         </div>
