@@ -5,15 +5,15 @@ document.querySelectorAll('.selectable').forEach((section) => {
     section.addEventListener('click', (evento) => {
         evento.stopPropagation();
         document.querySelectorAll('.selectable').forEach((outraSection) => {
-            outraSection.classList.remove('nm-inset-gray-800-lg', 'border-b-4', 'border-purple-500');
+            outraSection.classList.remove('nm-inset-gray-900-lg', 'border-b-2', 'border-gray-400');
         });
-        evento.currentTarget.classList.add('nm-inset-gray-800-lg', 'border-b-4', 'border-purple-500');
+        evento.currentTarget.classList.add('nm-inset-gray-900-lg', 'border-b-2', 'border-gray-400');
     });
 });
 
 document.body.addEventListener('click', () => {
     document.querySelectorAll('.selectable').forEach((section) => {
-        section.classList.remove('nm-inset-gray-800-lg', 'border-b-4', 'border-purple-500');
+        section.classList.remove('nm-inset-gray-900-lg', 'border-b-2', 'border-gray-400');
     });
 });
 
@@ -117,7 +117,7 @@ function determineWinningTeam() {
 }
 
 
-function showModal(winningTeam = null, title = "Vencedor!", message = null) {
+function showModal(winningTeam = null, title = "Vencedores!", message = null) {
 
     if (message) {
         document.getElementById('modalVencedorTitle').textContent = message;
@@ -125,8 +125,8 @@ function showModal(winningTeam = null, title = "Vencedor!", message = null) {
         document.getElementById('modalVencedorTitle').textContent = title;
     }
 
-    const corDupla1 = 'text-red-500';
-    const corDupla2 = 'text-purple-500';
+    const corDupla1 = 'text-purple-500';
+    const corDupla2 = 'text-teal-500';
 
     if (winningTeam) {
         let dupla1Nome1 = input1.value;
@@ -447,7 +447,7 @@ function changeTurn(direction) {
 function updateTurnDisplay() {
 
     document.querySelectorAll('.containerVez > button').forEach((button) => {
-        button.classList.remove('nm-inset-gray-800-lg', 'border-b-4', 'border-purple-500');
+        button.classList.remove('nm-inset-gray-900-lg', 'border-b-2', 'border-gray-400');
     });
 
 
@@ -455,7 +455,7 @@ function updateTurnDisplay() {
     console.log("Trying to access button with ID:", `vez${currentPlayer}`);
 
     if (activeButton) {
-        activeButton.classList.add('nm-inset-gray-800-lg', 'border-b-4', 'border-purple-500');
+        activeButton.classList.add('nm-inset-gray-900-lg', 'border-b-2', 'border-gray-400');
     }
 }
 
