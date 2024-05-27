@@ -1,10 +1,11 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "dist/index.html", "use": "@vercel/static" }
-    ],
-    "routes": [
-      { "src": "/(.*)", "dest": "dist/index.html" }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    { "src": "dist/index.html", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "dist/index.html" },  // Rota para o HTML
+    { "src": "/dist/css/output.css", "type": "asset", "dest": "/dist/css/output.css" }, // Rota para o CSS
+    { "src": "/dist/js/scripts.js", "type": "asset", "dest": "/dist/js/scripts.js" } // Rota para o JS
+  ]
+}
