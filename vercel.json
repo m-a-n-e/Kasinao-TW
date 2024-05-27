@@ -6,6 +6,6 @@
   "routes": [
     { "src": "/(.*)", "dest": "dist/index.html" },
     { "src": "/dist/css/output.css", "type": "asset", "dest": "/dist/css/output.css" },
-    { "src": "/dist/js/scripts.js", "type": "asset", "dest": "/dist/js/scripts.js" } //
+    { "src": "/dist/js/scripts.js", "type": "asset", "dest": "/dist/js/scripts.js" }
   ]
 }
