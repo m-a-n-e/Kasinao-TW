@@ -1314,6 +1314,10 @@ video {
     padding-top: 8rem;
   }
 }
+
+.disable-dbl-tap-zoom {
+  touch-action: manipulation;
+}
 </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1335,15 +1339,15 @@ video {
                         class="text-gray-200 rounded-2xl h-8 w-8/12 pl-3 mb-4 font-krona text-xs nm-inset-gray-900-lg focus:outline-none  border-b-2 border-transparent focus:border-gray-400"
                         type="text" placeholder="Nome 2">
                     <button id="dropdownButton1"
-                        class="selectable rounded-2xl h-20 w-8/12 mb-4 font-krona text-purple-500 text-4xl text-center nm-inset-gray-900 flex items-center justify-center select-none focus:outline-none ">0</button>
+                        class="disable-dbl-tap-zoom selectable rounded-2xl h-20 w-8/12 mb-4 font-krona text-purple-500 text-4xl text-center nm-inset-gray-900 flex items-center justify-center select-none focus:outline-none ">0</button>
                     <div id="dropdown1"
                         class="hidden absolute w-36 mt-2 nm-convex-gray-900-lg text-white rounded-xl shadow-md">
                         <button
-                            class="block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-900-lg rounded-t-xl hover:text-white font-bold">+1</button>
+                            class="disable-dbl-tap-zoom block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-900-lg rounded-t-xl hover:text-white font-bold">+1</button>
                         <button
-                            class="block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-900-lg hover:text-white font-bold">+3</button>
+                            class="disable-dbl-tap-zoom block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-900-lg hover:text-white font-bold">+3</button>
                         <button
-                            class="block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-900-lg rounded-b-xl hover:text-white font-bold">-1</button>
+                            class="disable-dbl-tap-zoom block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-900-lg rounded-b-xl hover:text-white font-bold">-1</button>
                     </div>
                 </section>
 
@@ -1356,15 +1360,15 @@ video {
                         class="text-gray-200 rounded-2xl h-8 w-8/12 pl-3 mb-4 font-krona text-xs nm-inset-gray-900-lg focus:outline-none  border-b-2 border-transparent focus:border-gray-400"
                         type="text" placeholder="Nome 2">
                     <button id="dropdownButton2"
-                        class="selectable rounded-2xl h-20 w-8/12 mb-4 font-krona text-teal-500 text-4xl text-center nm-inset-gray-900 flex items-center justify-center select-none focus:outline-none ">0</button>
+                        class="disable-dbl-tap-zoom selectable rounded-2xl h-20 w-8/12 mb-4 font-krona text-teal-500 text-4xl text-center nm-inset-gray-900 flex items-center justify-center select-none focus:outline-none ">0</button>
                     <div id="dropdown2"
                         class="hidden absolute w-36 mt-2 nm-convex-gray-900-lg text-white rounded-xl shadow-md">
                         <button
-                            class="block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-900-lg rounded-t-xl hover:text-white font-bold">+1</button>
+                            class="disable-dbl-tap-zoom block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-900-lg rounded-t-xl hover:text-white font-bold">+1</button>
                         <button
-                            class="block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-900-lg hover:text-white font-bold">+3</button>
+                            class="disable-dbl-tap-zoom block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-900-lg hover:text-white font-bold">+3</button>
                         <button
-                            class="block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-900-lg rounded-b-xl hover:text-white font-bold">-1</button>
+                            class="disable-dbl-tap-zoom block w-full text-center px-4 py-2 text-sm hover:nm-inset-gray-900-lg rounded-b-xl hover:text-white font-bold">-1</button>
                     </div>
                 </section>
 
@@ -1409,10 +1413,10 @@ video {
                         <button id="curingaAnterior"
                             class="rounded-2xl h-44 w-8/12 font-krona text-gray-300 text-4xl text-center nm-inset-gray-900 flex items-center justify-center select-none focus:outline-none">J</button>
                     </div>
-                    <div class="flex flex-col w-full items-center">
+                    <div class="disable-dbl-tap-zoom flex flex-col w-full items-center">
                         <h1 class="select-none mb-3 font-krona flex-grow text-md text-white">Atual</h1>
                         <button id="curingaAtual"
-                            class="selectable rounded-2xl h-44 w-8/12 font-krona text-gray-300 text-4xl text-center nm-inset-gray-900 flex items-center justify-center select-none focus:outline-none">J</button>
+                            class="disable-dbl-tap-zoom selectable rounded-2xl h-44 w-8/12 font-krona text-gray-300 text-4xl text-center nm-inset-gray-900 flex items-center justify-center select-none focus:outline-none">J</button>
                         <div id="curingaAtualDropdown"
                             class="hidden absolute w-fit -mt-12 nm-convex-gray-900-lg text-white rounded-xl shadow-md">
                             <div class="flex flex-row">
@@ -1455,7 +1459,7 @@ video {
             <section
                 class="animate-in fade-in zoom-in duration-700 containerVez rounded-2xl nm-convex-gray-900-lg mx-2 mb-4 h-14 grid grid-cols-6">
                 <button id="anteriorVez"
-                    class="focus:outline-none text-center text-2xl font-krona text-gray-400 rounded-l-2xl flex items-center justify-center"><svg
+                    class="disable-dbl-tap-zoom focus:outline-none text-center text-2xl font-krona text-gray-400 rounded-l-2xl flex items-center justify-center"><svg
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-5">
                         <path stroke-linecap="round" stroke-linejoin="round"
@@ -1474,7 +1478,7 @@ video {
                     class="focus:outline-none text-center text-2xl font-krona text-teal-500 rounded-r-2xl flex items-center justify-center">
                 </button>
                 <button id="proximaVez"
-                    class="focus:outline-none text-center text-2xl font-krona text-gray-400 rounded-l-2xl flex items-center justify-center"><svg
+                    class="disable-dbl-tap-zoom focus:outline-none text-center text-2xl font-krona text-gray-400 rounded-l-2xl flex items-center justify-center"><svg
                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-5">
                         <path stroke-linecap="round" stroke-linejoin="round"
